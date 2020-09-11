@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试ajax</title>
+</head>
+<body>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    axios({
+        method: 'get',
+        url: '/test',
+    }).then(function (value) {
+        var date = JSON.stringify(value)
+        alert(date);
+    });
+</script>
+</html>
